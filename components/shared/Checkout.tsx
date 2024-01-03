@@ -32,6 +32,7 @@ const Checkout = ({ event, userId }: { event: IEvent; userId: string }) => {
       buyerId: userId,
     };
 
+    console.log(order);
     await checkoutOrder(order);
   };
   return (

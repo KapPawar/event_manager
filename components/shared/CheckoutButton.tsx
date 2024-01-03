@@ -9,7 +9,7 @@ import Checkout from "./Checkout";
 const CheckoutButton = ({ event }: { event: IEvent }) => {
   const hasEventFinished = new Date(event.endDateTime) < new Date();
   const { user } = useUser();
-  const userId = user?.publicMetadata.userId as string;
+  const userId = user?.id as string;
   return (
     <div className="flex items-center gap-3">
       {/* Cannot but past events */}
